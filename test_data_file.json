@@ -1,0 +1,13 @@
+{
+    "Application": "Test Application",
+    "primary_region": "us-east-2",
+    "failover_region": "us-west-2",
+    "current_region": "us-east-2",
+    "external_DNS_name": "dramsden-test-cname1.wba-testing.com",
+    "hosted_zone": "Z2QKVKJPQAWOHT",
+    "TTL": "300",
+    "primary_location": "dramsden-test-123456.wba-testing.com.",
+    "failover_location": "dramsden-test-654321.wba-testing.com.",
+    "current_location": "dramsden-test-123456.wba-testing.com.",
+    "hosted_zone_record_type": "CNAME"
+}

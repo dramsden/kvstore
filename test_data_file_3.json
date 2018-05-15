@@ -1,0 +1,87 @@
+{
+    "application_name": {"S": "Testing-Application"},
+	"app": {"S": "Application"},
+    "account": {"S": "123456789012"},
+	"studio": {"S": "Testing"},
+    "primary_region": {"S": "us-east-2"},
+    "failover_region": {"S": "us-west-2"},
+    "current_region": {"S": "us-east-2"},
+	"instances": [
+		{
+			"instance_id": "i-002584e60e4e48a24",
+			"instance_name": "Instance Name",
+			"asg": "None",
+			"instance_tags": {
+				"Tag1": "Tagtext1",
+				"Tag2": "Tagtext2"
+			},
+			"security_groups": [
+				"sg-22222222"
+			]
+		},
+		{
+			"instance_id": "i-002584e60e4e48a20",
+			"instance_name": "Instance Name",
+			"asg": "asg-4567890",
+			"instance_tags": {
+				"Tag1": "Tagtext11",
+				"Tag2": "Tagtext22"
+			},
+			"security_groups": [
+				"sg-11111111"
+			]
+		}
+	],
+	"auto_scaling_groups": [
+		{
+			"asg_name": "ASG Name",
+			"launch_configuration": "lc-345678"
+		}
+	],
+	"efs_drives": [
+		{
+			"efs_id": "efs-123456789",
+			"efs_name": "efs-123456789",
+			"key_name": "testkey",
+			"s3_backup": "arn:for:s3:backup:of:this:efs",
+			"security_groups": [
+				"sg-11111111"
+			]
+		}
+	],
+    "vpcs": [
+		{
+			"vpc_id": "vpc-66666666",
+			"vpc_name": "VPC Name",
+			"subnets": [
+				"subnet-01010101",
+				"subnet-23232322"
+                ]
+		},
+		{
+			"vpc_id": "vpc-77777777",
+			"vpc_name": "VPC Name",
+			"subnets": [
+				"subnet-45454545",
+				"subnet-67676767"
+            ]
+		}
+	],
+    "tasks": [
+        "b99d40b3-5176-4f71-9a52-9dbd6f1cebef"
+    ],
+    "container_instances": [
+        {
+            "c_instance_arn": "arn:aws:ecs:us-east-1:111122223333:container-instance/b54a2a04-046f-4331-9d74-3f6d7f6ca315"
+        }
+    ],
+	"dns_records": {
+        "external_dns_name": "dramsden-test-cname1.wba-testing.com",
+        "hosted_zone": "Z2QKVKJPQAWOHT",
+        "ttl": "300",
+        "primary_location": "dramsden-test-123456.wba-testing.com.",
+        "failover_location": "dramsden-test-654321.wba-testing.com.",
+        "current_location": "dramsden-test-123456.wba-testing.com.",
+        "hosted_zone_record_type": "CNAME"
+	}
+}
